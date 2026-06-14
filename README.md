@@ -15,3 +15,8 @@ _Result_:Through the exercise I was able to understand and execute VQE for 2x2 H
  _Failed Attempt_ : In the first attempt, I used a Quantum circuit without any means of Entanglement. This lead to the shrinkage of Hilbert space where the exact solution lies. Hence the code did not work.\
  _Modules_:The second program has been made from scratch with numpy and simple functions from Qiskit module. This program uses 8 parameters though there are only 6 independent variables in the problem. Taking 8 parameters ensures a smooth rotation of state vectors. I have used both Gradient method and COBYLA for optimising the Quantum state.\
 _Result_:Through the exercise I was able to understand and execute VQE for 4x4 Hermitian and why is Entanglement required to find the exact solution. The end results of both Gradient and COBYLA match and only vary by global phase.
+
+**Hartree Fock method for 1D infinite well.**\
+ _Problem Statement_ : In this exercise, I tried to find the Hartree Fock Molecular orbitals in many electron 1D infinite well with Restricted orbital approximation.\
+ _Modlues_ : Numpy, Scipy(integration) and Matplotlib are the modlues used in the code. No Python modules specilaized for Hartree Fock or Computational Chemistry were used.\
+ _Result_ : Through the exercise I was able to understand the Hartree Fock method. For 2,6,10,... electron systems, the wavefunction is asymmetric as electrons tend to move to the corner of infinite well. For 4,8,12,... electron systems, the wavefunction is symmetric.
